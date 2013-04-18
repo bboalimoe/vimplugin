@@ -25,4 +25,10 @@ if has('mouse')
     set mouse=a
 endif
 
+" infomative status line
+" format, by default, vim does not show the status line at all.
+set statusline=%F%m%r%h%w\[FORMAT=%{&ff}]\[TYPE=%Y]\[POS=%04l,%04v][%p%%]\[LEN=%L] 
+" always shown, shown as the second last line in the editor window
+set laststatus=2 " 
+
 set history=50      " keep 50 lines of command line history

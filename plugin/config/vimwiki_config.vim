@@ -2,14 +2,28 @@
 
 " project config
 " path and markdown
-let g:vimwiki_list = [{'path': '/media/document/notes',
-                \ 'syntax': 'markdown', 'ext': '.md'},
-                \ {'path': '~/vimwiki_test/',
-                \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '/media/document/blog/notes/wiki',
+                \ 'diary_rel_path': '/media/document/blog/notes/diary'},
+                \ {'path': '~/vimwiki_test/wiki'}]
 
+" convert
+nmap <F5> <Plug>Vimwiki2HTML
 
 " todo-list
 " mark or unmark
 nmap <F2> <Plug>VimwikiToggleListItem
 " show marked items in other color
 let g:vimwiki_hl_cb_checked = 1
+
+" use wiki title format
+let g:vimwiki_hl_headers = 1
+
+" do not create temp repo when un-versioned .wiki detected
+let g:vimwiki_global_ext = 0
+
+" no menu
+let g:vimwiki_menu = ''
+
+" suite for chinese character
+let g:vimwiki_CJK_length = 1
+

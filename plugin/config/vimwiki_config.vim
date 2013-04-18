@@ -3,7 +3,7 @@
 " project config
 " path and markdown
 let g:vimwiki_list = [{'path': '/media/document/blog/notes/wiki',
-                \ 'diary_rel_path': '/media/document/blog/notes/diary'},
+                \ 'diary_rel_path': 'diary'},
                 \ {'path': '~/vimwiki_test/wiki'}]
 
 " convert

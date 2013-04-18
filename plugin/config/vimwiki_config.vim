@@ -6,12 +6,13 @@ let g:vimwiki_list = [{'path': '/media/document/blog/notes/wiki',
                 \ 'diary_rel_path': 'diary'},
                 \ {'path': '~/vimwiki_test/wiki'}]
 
-" convert
-nmap <F5> <Plug>Vimwiki2HTML
+" compile
+autocmd filetype vimwiki nmap <F5> <Plug>Vimwiki2HTML
+autocmd filetype vimwiki nmap <F4> :VimwikiAll2HTML
 
 " todo-list
 " mark or unmark
-nmap <F2> <Plug>VimwikiToggleListItem
+autocmd filetype vimwiki nmap <F2> <Plug>VimwikiToggleListItem
 " show marked items in other color
 let g:vimwiki_hl_cb_checked = 1
 

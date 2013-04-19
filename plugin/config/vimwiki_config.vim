@@ -4,6 +4,8 @@
 " path and markdown
 let g:vimwiki_list = [{'path': '/media/document/blog/notes/wiki',
                 \ 'diary_rel_path': 'diary'},
+                \ {'path': '/media/document/netbook/wiki',
+                \ 'diary_rel_path': 'diary'},
                 \ {'path': '~/vimwiki_test/wiki'}]
 
 " compile
@@ -15,6 +17,9 @@ autocmd filetype vimwiki nmap <F4> :VimwikiAll2HTML
 autocmd filetype vimwiki nmap <F2> <Plug>VimwikiToggleListItem
 " show marked items in other color
 let g:vimwiki_hl_cb_checked = 1
+" folding
+autocmd filetype vimwiki set foldmethod=indent
+autocmd filetype vimwiki set foldlevel=1
 
 " use wiki title format
 let g:vimwiki_hl_headers = 1

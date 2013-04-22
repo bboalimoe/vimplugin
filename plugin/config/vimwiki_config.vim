@@ -2,11 +2,20 @@
 
 " project config
 " path and markdown
+if has("win32")
+let g:vimwiki_list = [{'path': 'd:/github/notes/wiki',
+                \ 'diary_rel_path': 'diary'},
+                \ {'path': 'd:/netbook/wiki',
+                \ 'diary_rel_path': 'diary'},
+                \ {'path': 'd:/vimwiki_test/wiki'}]
+else
 let g:vimwiki_list = [{'path': '/media/document/blog/notes/wiki',
                 \ 'diary_rel_path': 'diary'},
                 \ {'path': '/media/document/netbook/wiki',
                 \ 'diary_rel_path': 'diary'},
                 \ {'path': '~/vimwiki_test/wiki'}]
+endif
+
 
 " compile
 autocmd filetype vimwiki nmap <F5> <Plug>Vimwiki2HTML

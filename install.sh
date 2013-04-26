@@ -6,4 +6,4 @@ then
 fi
 
 echo 'input passwd to install dependent packages'
-sudo apt-get install exuberant-ctags zathura
+sudo apt-get install -y -qq exuberant-ctags zathura

@@ -3,7 +3,7 @@
 # backup .vimrc if exists
 if ls -a ~ |grep -E "^.vimrc$" > /dev/null
 then
-    cp ~/.vimrc ~/.vim/vimrc
+    cp -i ~/.vimrc ~/.vim/vimrc
 else
     echo warning: .vimrc not exist 
 fi

@@ -9,9 +9,9 @@ if has("autocmd")
 endif
 
 " encoding
-set encoding=utf-8  " vim cache encoding
+" set encoding=utf-8  " vim cache encoding
 set fileencodings=utf-8,gb18030,gbk " open file with
-set fileencoding=utf-8 " save file with
+" set fileencoding=utf-8 " save file with
 
 set backspace=indent,eol,start  " more powerful backspacing
 " tabs

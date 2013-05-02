@@ -35,3 +35,6 @@ set history=50      " keep 50 lines of command line history
 
 set tags=tags;  " search tags files from current dir/father dir/and so on
                 " current dir is the dir where vim started
+
+" python coding env
+autocmd BufWritePost *.py call Flake8()

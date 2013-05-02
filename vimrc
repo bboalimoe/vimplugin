@@ -32,3 +32,6 @@ set statusline=%F%m%r%h%w\[FORMAT=%{&ff}]\[TYPE=%Y]\[POS=%04l,%04v][%p%%]\[LEN=%
 set laststatus=2 " 
 
 set history=50      " keep 50 lines of command line history
+
+set tags=tags;  " search tags files from current dir/father dir/and so on
+                " current dir is the dir where vim started

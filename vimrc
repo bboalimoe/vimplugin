@@ -19,6 +19,9 @@ set tabstop=4 " tab width
 set shiftwidth=4 " width of nested tabs
 set expandtab " input spaces instead of tab when typing a tab
 set softtabstop=4 " 1. space deleted when typing <BackSpace>
+" show tabs
+set listchars=tab:>.
+set list
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
@@ -30,6 +33,7 @@ endif
 set statusline=%F%m%r%h%w\[FORMAT=%{&ff}]\[TYPE=%Y]\[POS=%04l,%04v][%p%%]\[LEN=%L] 
 " always shown, shown as the second last line in the editor window
 set laststatus=2 " 
+set nu
 
 set history=50      " keep 50 lines of command line history
 

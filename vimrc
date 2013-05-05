@@ -41,4 +41,5 @@ set tags=tags;  " search tags files from current dir/father dir/and so on
                 " current dir is the dir where vim started
 
 " python coding env
+let g:flake8_ignore="E302"
 autocmd BufWritePost *.py call Flake8()

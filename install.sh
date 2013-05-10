@@ -1,17 +1,11 @@
 #!/bin/bash
 
-if [ -a vimrc ]
-then
-    cp -i vimrc ~/.vimrc
-fi
+# update from github
+git pull origin master
+# .vimrc
+cp -i vimrc ~/.vimrc
 
-rm -rf ~/.vim
-mkdir -p ~/.vim
-cp -R . ~/.vim
-
-if `"which ctags"`
-then
-    echo installed
-    # sudo apt-get install -y zathura
-fi
-# exuberant-ctags 
+#if [ -a vimrc ]
+#then
+#    cp -i vimrc ~/.vimrc
+#fi

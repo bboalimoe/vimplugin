@@ -14,4 +14,3 @@ git add .
 git add -u .
 git commit -m"vim plugin update"
 git push origin master --force
-

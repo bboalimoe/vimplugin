@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# update from github
-git pull origin master
 # .vimrc
-cp -i vimrc ~/.vimrc
+cp vimrc ~/.vimrc
 
 #if [ -a vimrc ]
 #then

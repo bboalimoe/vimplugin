@@ -22,13 +22,15 @@ set softtabstop=4 " 1. space deleted when typing <BackSpace>
 " show tabs
 set listchars=tab:>.
 set list
+
 " show line number
 set nu
 
 " copy and paste is unavailable if uncommented
-" if has('mouse')
-"    set mouse=a
-" endif
+if has('mouse')
+    set mouse=a
+endif
+" set clipboard+=unnamed
 
 " infomative status line
 " format, by default, vim does not show the status line at all.

@@ -5,6 +5,7 @@ then
     cp -i vimrc ~/.vimrc
 fi
 
+rm -rf ~/.vim
 mkdir -p ~/.vim
 cp -R . ~/.vim
 

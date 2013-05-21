@@ -46,3 +46,10 @@ set tags=tags;  " search tags files from current dir/father dir/and so on
 " python coding env
 let g:flake8_ignore="E302,E501"
 autocmd BufWritePost *.py call Flake8()
+
+" js
+" 打开javascript折叠
+let b:javascript_fold=1
+" 打开javascript对dom、html和css的支持
+let javascript_enable_domhtmlcss=1
+setlocal foldlevel=1
